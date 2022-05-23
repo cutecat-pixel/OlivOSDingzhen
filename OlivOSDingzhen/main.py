@@ -35,7 +35,7 @@ def deleteBlank(str):
 
 def unity_reply(plugin_event, Proc):
     command_list = deleteBlank(plugin_event.data.message)
-    if command_list[0] == '二喵，一眼丁真':
+    if command_list[0] == '一眼丁真':
         try:
             Dingzhen_api = requests.get('https://api.aya1.top/randomdj?r=0')
             Dingzhen_json = json.loads(Dingzhen_api.text)
